@@ -19,7 +19,7 @@ if st.button("評価を開始する"):
     target = next(d for d in data if d['theme'] == selected_debate)
     
     # AIへ分析を依頼
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-2.0-flash')
     prompt = f"以下のディベート内容を分析し、ユーザー側の論理的弱点と改善案を提示して：\n{target['history']}"
     
     response = model.generate_content(prompt)
