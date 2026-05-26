@@ -6,7 +6,8 @@ import google.generativeai as genai
 def load_debate_data():
     with open("debate_data.json", "r", encoding="utf-8") as f:
         return json.load(f)
-
+# API設定（環境変数などで管理）
+genai.configure(api_key="AIzaSyA2B7Ae31pGl40y-5n11w3Kf469tbD1RcA")
 st.title("🎓 ディベート・コーチング・ラボ")
 
 # 1. 過去のディベートから選択
