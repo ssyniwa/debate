@@ -3,7 +3,7 @@ import json
 
 # データの読み込み
 def load_data():
-    with open("debate_library.json", "r", encoding="utf-8") as f:
+    with open("debate_data.json", "r", encoding="utf-8") as f:
         return json.load(f)
 
 st.title("🏆 ディベート・ライブラリ")
